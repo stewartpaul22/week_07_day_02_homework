@@ -27,4 +27,8 @@ public class RoundaboutTest {
         assertEquals(12, roundabout.getCapacity());
     }
 
+    @Test
+    public void canStart() {
+        assertEquals("Current status: Running", roundabout.start("Running"));
+    }
 }
