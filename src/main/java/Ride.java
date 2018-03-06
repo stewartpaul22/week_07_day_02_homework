@@ -1,4 +1,4 @@
-public class Ride {
+public abstract class Ride {
 
     private String name;
     private double price;
@@ -16,5 +16,21 @@ public class Ride {
 
     public String getName() {
         return this.name;
+    }
+
+    public double getPrice() {
+        return this.price;
+    }
+
+    public int getCapacity() {
+        return this.capacity;
+    }
+
+    public int getMinAge() {
+        return this.minAge;
+    }
+
+    public int getMinHeight() {
+        return this.minHeight;
     }
 }
