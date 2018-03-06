@@ -21,6 +21,8 @@ public class Customer extends Person implements IBoard {
             return "Cannot board " + rollercoaster.getName() + ": too short";
         } else if (this.getAge() < rollercoaster.getMinAge()) {
             return "Cannot board " + rollercoaster.getName() + ": too young";
+        } else if (this.funds < rollercoaster.getPrice()) {
+            return "Cannot board " + rollercoaster.getName() + ": not enough money";
         }
         return "Customer has boarded: " + rollercoaster.getName();
     }

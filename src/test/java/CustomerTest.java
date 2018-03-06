@@ -60,6 +60,8 @@ public class CustomerTest {
         assertEquals("Cannot board Nemesis: too young", customer2.boardRide(rollercoaster));
     }
 
-    // test if not enough money
-
+    @Test
+    public void cannotBoard__InsufficientFunds() {
+        assertEquals("Cannot board Nemesis: not enough money", customer3.boardRide(rollercoaster));
+    }
 }
