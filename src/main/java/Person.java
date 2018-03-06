@@ -9,4 +9,16 @@ public abstract class Person {
         this.age = age;
         this.height = height;
     }
+
+    public String getName() {
+        return this.name;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    public int getHeight() {
+        return this.height;
+    }
 }

@@ -6,4 +6,8 @@ public class Customer extends Person {
         super(name, age, height);
         this.funds = funds;
     }
+
+    public double getFunds() {
+        return this.funds;
+    }
 }
