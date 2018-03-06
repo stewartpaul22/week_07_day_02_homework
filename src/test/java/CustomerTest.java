@@ -31,4 +31,8 @@ public class CustomerTest {
     public void hasFunds() {
         assertEquals(20.00, customer.getFunds(), 0.01);
     }
+
+    
+
+
 }
