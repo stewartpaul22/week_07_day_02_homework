@@ -31,4 +31,9 @@ public class RoundaboutTest {
     public void canStart() {
         assertEquals("Current status: Running", roundabout.start("Running"));
     }
+
+    @Test
+    public void canStop() {
+        assertEquals("Current status: Stopped", roundabout.stop("Stopped"));
+    }
 }
