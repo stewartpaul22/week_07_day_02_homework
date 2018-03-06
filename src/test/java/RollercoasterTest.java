@@ -36,4 +36,9 @@ public class RollercoasterTest {
     public void hasMinHeight() {
         assertEquals(120, rollercoaster.getMinHeight());
     }
+
+    @Test
+    public void canStart() {
+        assertEquals("Current status: Running", rollercoaster.start("Running"));
+    }
 }

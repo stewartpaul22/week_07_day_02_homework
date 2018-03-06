@@ -1,4 +1,4 @@
-public class Rollercoaster extends Ride {
+public class Rollercoaster extends Ride implements IStart {
 
     private int minAge;
     private int minHeight;
@@ -17,4 +17,8 @@ public class Rollercoaster extends Ride {
         return this.minHeight;
     }
 
+    @Override
+    public String start(String status) {
+        return "Current status: " + status;
+    }
 }
