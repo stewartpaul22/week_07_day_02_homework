@@ -1,4 +1,4 @@
-public class Customer extends Person {
+public class Customer extends Person implements IBoard {
 
     private double funds;
 
@@ -9,5 +9,19 @@ public class Customer extends Person {
 
     public double getFunds() {
         return this.funds;
+    }
+
+    @Override
+    public String board(String ride) {
+        return "Boarded: " + ride;
+    }
+
+    public String boardRide(Rollercoaster rollercoaster) {
+        if (this.getHeight() < rollercoaster.getMinHeight()) {
+            return "Cannot board " + rollercoaster.getName() + ": too short";
+        } else if (this.getAge() < rollercoaster.getMinAge()) {
+            return "Cannot board " + rollercoaster.getName() + ": too young";
+        }
+        return "Customer has boarded: " + rollercoaster.getName();
     }
 }
