@@ -41,4 +41,9 @@ public class RollercoasterTest {
     public void canStart() {
         assertEquals("Current status: Running", rollercoaster.start("Running"));
     }
+
+    @Test
+    public void canStop() {
+        assertEquals("Current status: Stopped", rollercoaster.stop("Stopped"));
+    }
 }
